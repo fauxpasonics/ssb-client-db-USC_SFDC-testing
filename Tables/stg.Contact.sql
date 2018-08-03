@@ -1,0 +1,40 @@
+CREATE TABLE [stg].[Contact]
+(
+[SSB_CRMSYSTEM_ACCT_ID] [varchar] (100) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+[SSB_CRMSYSTEM_CONTACT_ID] [varchar] (100) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+[IsBusinessAccount] [int] NOT NULL,
+[SSB_CRMSYSTEM_PRIMARY_FLAG] [int] NULL,
+[FullName] [nvarchar] (201) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[FirstName] [nvarchar] (100) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[LastName] [nvarchar] (100) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Title] [varchar] (1) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[PrimaryAddressType] [varchar] (1) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[MailingStreet] [nvarchar] (500) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[MailingCity] [nvarchar] (200) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[MailingState] [nvarchar] (200) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[MailingPostalCode] [nvarchar] (25) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[MailingCountry] [nvarchar] (200) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Phone] [nvarchar] (25) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Fax] [nvarchar] (25) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[HomePhone] [nvarchar] (25) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[MobilePhone] [nvarchar] (25) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[OtherPhone] [nvarchar] (25) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[EmailPrimary] [varchar] (100) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[USC_Flag] [int] NULL,
+[USC_SeasonTicket_Years] [varchar] (1000) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Brand] [varchar] (100) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[changeType] [varchar] (1) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+[AccountId] [varchar] (18) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[salesforce_ID] [varchar] (18) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[MDM_UpdatedDate] [datetime] NOT NULL,
+[SFDCProcess_UpdatedDate] [datetime] NULL,
+[SFDC_LoadDate] [datetime] NULL,
+[LastSFDCLoad_Error] [varchar] (8000) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[LastSFDCLoad_AttemptDate] [datetime] NULL,
+[SSID_Winner] [varchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[USC_Losers] [varchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[DimCustID_Losers] [varchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL
+)
+GO
+ALTER TABLE [stg].[Contact] ADD CONSTRAINT [PK_Contact_1] PRIMARY KEY CLUSTERED  ([SSB_CRMSYSTEM_CONTACT_ID])
+GO

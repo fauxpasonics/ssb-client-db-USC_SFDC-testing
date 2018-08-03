@@ -1,0 +1,11 @@
+SET QUOTED_IDENTIFIER ON
+GO
+SET ANSI_NULLS ON
+GO
+
+
+CREATE VIEW [MERGEProcess].[vw_Features]
+AS
+SELECT CAST('PersonAccount' AS VARCHAR(200)) Account_RecordType 
+
+GO

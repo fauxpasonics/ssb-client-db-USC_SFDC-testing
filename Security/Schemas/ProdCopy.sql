@@ -1,0 +1,7 @@
+CREATE SCHEMA [ProdCopy]
+AUTHORIZATION [SSBCLOUD\bmackley]
+GO
+GRANT EXECUTE ON SCHEMA:: [ProdCopy] TO [svcssbrp]
+GO
+GRANT SELECT ON SCHEMA:: [ProdCopy] TO [svcssbrp]
+GO

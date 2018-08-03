@@ -1,0 +1,5 @@
+IF NOT EXISTS (SELECT * FROM master.dbo.syslogins WHERE loginname = N'SSBINFO\SSB Reporting')
+CREATE LOGIN [SSBINFO\SSB Reporting] FROM WINDOWS
+GO
+CREATE USER [SSBINFO\SSB Reporting] FOR LOGIN [SSBINFO\SSB Reporting]
+GO

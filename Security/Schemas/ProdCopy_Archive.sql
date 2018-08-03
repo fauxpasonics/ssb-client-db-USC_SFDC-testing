@@ -1,0 +1,3 @@
+CREATE SCHEMA [ProdCopy_Archive]
+AUTHORIZATION [SSBCLOUD\bmackley]
+GO

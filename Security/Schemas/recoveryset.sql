@@ -1,0 +1,3 @@
+CREATE SCHEMA [recoveryset]
+AUTHORIZATION [dbo]
+GO
